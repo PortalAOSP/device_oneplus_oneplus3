@@ -243,7 +243,7 @@ PRODUCT_PACKAGES += \
 
 # Doze mode
 PRODUCT_PACKAGES += \
-    OneplusDoze
+    OneplusThreeDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -254,6 +254,7 @@ PRODUCT_PACKAGES += \
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
     OneplusPocketMode \
+    fingerprintd \
     android.hardware.biometrics.fingerprint@2.1-service
 
 # Gatekeeper HAL
