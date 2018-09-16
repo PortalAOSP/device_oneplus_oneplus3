@@ -48,7 +48,7 @@
      NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
     <bool name="config_proximityCheckOnWake">true</bool>
     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
-    <integer name="config_proximityCheckTimeout">100</integer>
+    <integer name="config_proximityCheckTimeout">40</integer>
 
     <!-- Does the notification LED support multiple colors?
          Used to decide if the user can change the colors -->
@@ -90,7 +90,7 @@
 
     <!-- If true, the doze component is not started until after the screen has been
           turned off and the screen off animation has been performed. -->
-    <bool name="config_dozeAfterScreenOff">true</bool>
+    <bool name="config_dozeAfterScreenOffByDefault">true</bool>
 
 
     <!-- Controls the WiFi wakeup feature.
