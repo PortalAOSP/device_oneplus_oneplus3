@@ -178,7 +178,7 @@ TARGET_PROVIDES_KEYMASTER := true
 TARGET_PROVIDES_LIBLIGHT := true
 
 # Key Disabler
-JAVA_SOURCE_OVERLAYS := org.pixelexperience.keydisabler|$(PLATFORM_PATH)/keydisabler**/*.java
+JAVA_SOURCE_OVERLAYS := org.pixelexperience.keydisabler|$(PLATFORM_PATH)/keydisabler|**/*.java
 
 # Mainfest
 DEVICE_MANIFEST_FILE := $(PLATFORM_PATH)/configs/manifest.xml
