@@ -177,8 +177,8 @@ TARGET_PROVIDES_KEYMASTER := true
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
-# Lineage Hardware
-BOARD_HARDWARE_CLASS += $(PLATFORM_PATH)/lineagehw
+# Key Disabler
+JAVA_SOURCE_OVERLAYS := org.pixelexperience.keydisabler|$(PLATFORM_PATH)/keydisabler**/*.java
 
 # Mainfest
 DEVICE_MANIFEST_FILE := $(PLATFORM_PATH)/configs/manifest.xml

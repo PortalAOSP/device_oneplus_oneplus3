@@ -14,9 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.hardware;
-
-import org.lineageos.internal.util.FileUtils;
+package org.pixelexperience.keydisabler;
 
 /*
  * Disable capacitive keys
@@ -28,17 +26,13 @@ import org.lineageos.internal.util.FileUtils;
  */
 
 public class KeyDisabler {
-
     private static String CONTROL_PATH = "/proc/s1302/virtual_key";
-
     public static boolean isSupported() {
         return FileUtils.isFileWritable(CONTROL_PATH);
     }
-
     public static boolean isActive() {
         return FileUtils.readOneLine(CONTROL_PATH).equals("1");
     }
-
     public static boolean setActive(boolean state) {
         return FileUtils.writeLine(CONTROL_PATH, (state ? "1" : "0"));
     }
